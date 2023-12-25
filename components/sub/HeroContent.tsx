@@ -9,6 +9,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import { Socials } from "@/constants";
 
 const HeroContent = () => {
   return (
@@ -49,6 +50,22 @@ const HeroContent = () => {
           Hey there, I&apos;m <b className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-xl ">Tajul Afreen</b>, a Full Stack Software Developer with experience in Website,
           Mobile, and Software development. Check out my projects and skills.
         </motion.p>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="flex flex-row gap-5 md:hidden"
+        >
+          {Socials.map((social) => (
+            <Image
+              src={social.src}
+              alt={social.name}
+              key={social.name}
+              width={24}
+              height={24}
+            />
+          ))}
+        </motion.div>
         <motion.a
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
