@@ -1,30 +1,39 @@
-import { Socials } from "@/constants";
+"use client"
+import { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import Image from "next/image";
-import React from "react";
-
+import Link from 'next/link';
+import { motion } from 'framer-motion'
+import { Socials } from "@/constants";
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+  const handleClick = () => {
+    if (window.innerWidth <= 768) {
+      setIsMenuOpen(false);
+    }
+  };
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <a
-          href="#about-me"
-          className="h-auto w-auto flex flex-row items-center"
-        >
+      <div className="w-[90%] h-full flex flex-row items-center justify-between m-auto px-[10px]">
+        <a href="#about-me" className="h-auto w-auto flex flex-row items-center">
           <Image
-            src="/NavLogo.png"
+            src="/NavLogo.jpeg"
             alt="logo"
             width={70}
             height={70}
-            className="cursor-pointer hover:animate-slowspin"
+            className="cursor-pointer hover:animate-slowspin rounded-[50%]"
           />
-
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
             Full-Stack Dev
           </span>
         </a>
 
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
+        <div className=" md:flex  hidden md:items-center md:justify-around  md:w-[70%] h-auto border border-[#7042f861] bg-[#0300145e] md:mr-20 md:px-[20px] md:py-[10px] md:rounded-full text-gray-200 ">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full">
             <a href="#about-me" className="cursor-pointer">
               About me
             </a>
@@ -37,7 +46,32 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex flex-row gap-5">
+        {/* Mobile menu button */}
+        <div className="md:hidden mt-[-25px]">
+          <button type="button" onClick={toggleMenu} className="text-gray-200 focus:outline-none absolute text-right ">
+            {isMenuOpen ? <FaTimes className="close w-9 h-9 p-1 " /> : <FaBars className="open w-9 h-9 p-1" />}
+          </button>
+        </div>
+
+        {/* Responsive Menu */}
+        {isMenuOpen && (
+          <div
+          className="w-full absolute top-[65px] left-0 bg-[#000000ec] items-center justify-center border border-[#7042f861] rounded-b-lg py-2 px-4 h-screen p-[10%]">
+            <motion.ul
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 2 }}
+            transition={{ delay: 0.2 }}
+            className="flex flex-col items-center justify-center bg-[#2b1537ec] shadow-2xl text-fuchsia-900  h-[80%] w-[80%] border border-[gray-200] rounded-3xl p-[10%] gap-9 m-[10%]">
+            
+            <li className='bg-gray-100  h-[50px] items-center w-[50%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#about-me" className="cursor-pointer" onClick={handleClick}>About me</Link></li>
+            <li className='bg-gray-100  h-[50px] items-center w-[50%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#skills" className="cursor-pointer mb-2" onClick={handleClick}>Skills</Link></li>
+            <li className='bg-gray-100  h-[50px] items-center w-[50%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#projects" className="cursor-pointer mb-2" onClick={handleClick}>Projects</Link></li>
+            <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="flex flex-row gap-5"
+        >
           {Socials.map((social) => (
             <Image
               src={social.src}
@@ -47,7 +81,13 @@ const Navbar = () => {
               height={24}
             />
           ))}
-        </div>
+        </motion.div>  
+            </motion.ul>
+               
+
+          </div>
+        )}
+
       </div>
     </div>
   );
