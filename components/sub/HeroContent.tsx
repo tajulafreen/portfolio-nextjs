@@ -54,7 +54,7 @@ const HeroContent = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="flex flex-row gap-5 md:hidden"
+          className="flex flex-row gap-5"
         >
           {Socials.map((social) => (
             <Image
