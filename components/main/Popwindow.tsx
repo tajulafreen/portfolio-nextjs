@@ -42,9 +42,13 @@ const Project = ({ project }: ProjectProps) => {
   );
 }
 
-const Popwindow = () => {
+interface PopwindowProps {
+    visible: boolean;
+  }
+const Popwindow = ({visible}: PopwindowProps) => {
+    if(!visible) return null
   return (
-    <div cl>
+    <div className='fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex items-center'>
       <h1>All Projects</h1>
       {projectDetails.map((project, index) => (
         <Project key={index} project={project} />
