@@ -50,8 +50,10 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex md:flex-row md:justify-around  md:gap-5 md:text-gray-200 md:text-[24px]">
-        <FaLinkedin />
-           <FaGithub />
+        <a href="https://www.linkedin.com/in/tajul-afreen"><FaLinkedin /></a>
+          <a href="https://www.github.com/tajulafreen"><FaGithub /></a>
+          <a href="https://discord.gg/2gUVQxZ4"><FaDiscord /></a>
+           <a href="https://www.twitter.com/tajulafreen"><FaTwitter /></a>
         </div>
 
         {/* Mobile menu button */}
@@ -80,10 +82,10 @@ const Navbar = () => {
           transition={{ delay: 0.2 }}
           className="flex flex-row gap-5 text-gray-200 text-[24px]"
         >
-          <FaLinkedin />
-           <FaGithub />
-           <FaDiscord />
-           <FaTwitter />
+          <a href="https://www.linkedin.com/in/tajul-afreen"><FaLinkedin /></a>
+          <a href="https://www.github.com/tajulafreen"><FaGithub /></a>
+          <a href="https://discord.gg/2gUVQxZ4"><FaDiscord /></a>
+           <a href="https://www.twitter.com/tajulafreen"><FaTwitter /></a>
         </motion.div>  
             </motion.ul>
                
