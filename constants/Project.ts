@@ -3,7 +3,7 @@ export const projectDetails = [
       name: 'Special Meals',
       description: [
   
-        'Special Meals project is built using two APIs. The project allows users to view meals they like, like the meals and add comments.It uses an internal API to store the user interactions with the meals. The project is built using webpack....',
+        'Special Meals project is built using two APIs. The project allows users to view meals they like, like the meals and add comments.It uses an internal API to store the user interactions with the meals. The project is built using webpack.',
         'The "Special Meals" project is a web application designed to showcase various meals while allowing users to engage by liking, favoriting, and commenting on these dishes. It integrates two APIs, one for retrieving meal data and another internal API to record user interactions. The platform enables users to explore a diverse range of meals, express their preferences by marking favorites, and share feedback through comments. Developed using Webpack and vanilla JavaScript, it offers an intuitive interface for users to interact with meals, fostering a user-friendly experience through simple yet effective functionalities like liking, favoriting, and leaving comments on different meal options.'
     ],
       image: '/specialsmeals.png',
@@ -28,7 +28,7 @@ export const projectDetails = [
     {
       name: 'Doctor Appointment',
       description: [
-        'Its an Online Doctor Reservation web application designed to provide users with the ability to reserve, view, and manage doctors and doctor appointment reservation . The system aims to streamline the process...',
+        'Its an Online Doctor Reservation web application designed to provide users with the ability to reserve, view, and manage doctors and doctor appointment reservation . The system aims to streamline the process.',
         "The Online Doctor Reservation web application offers users an intuitive platform to effortlessly manage doctor appointments and reservations. With its user-friendly interface, individuals can seamlessly view and book appointments with doctors across different locations. The system centralizes the process of finding and reserving appointments, providing a streamlined experience for users seeking medical consultations. By offering a comprehensive overview of available doctors and their schedules, the application simplifies the task of securing appointments, enhancing accessibility to healthcare services for individuals across diverse locations.",
       ],
       image: '/doctorappointment.png',
@@ -41,7 +41,7 @@ export const projectDetails = [
     {
       name: 'Crytocurrency The Future',
       description: [
-        'Crypto the future Is a website that provides users with the standing of Crypto currencies with their latest statistics accumulated during the 2019-2020 season',
+        'Crypto the future Is a website that provides users with the standing of Crypto currencies with their latest statistics accumulated during the 2019-2020 season.',
         "Crypto the Future is a comprehensive website designed to furnish users with up-to-date information and statistics on various cryptocurrencies. It presents an overview of the performance and standings of cryptocurrencies, compiling the latest statistical data from the 2019-2020 season. The platform serves as a valuable resource for individuals interested in monitoring and analyzing the trends, market positions, and key statistics of different cryptocurrencies within the specified timeframe. Offering insights into the dynamic landscape of digital currencies, the website serves as a reference hub for users seeking comprehensive details and analysis on the cryptocurrency market during the specified period..",
       ],
       image: '/cryptocurrency.png',
