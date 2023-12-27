@@ -1,5 +1,5 @@
 "use client"
-import React from 'react';
+import React, { useState } from 'react';
 import ProjectCard from '../sub/ProjectCard';
 import { projectDetails } from '@/constants/Project';
 import Slider from 'react-slick';
@@ -8,6 +8,18 @@ import 'slick-carousel/slick/slick-theme.css';
 import Popwindow from './Popwindow';
 
 const Projects = () => {
+  const [showPopUp, setShowPopUp] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const togglePopUp = (project: any) => {
+    setSelectedProject(project);
+    setShowPopUp(true);
+  };
+
+  const closePopUp = () => {
+    setShowPopUp(false);
+  };
+
   const settings = {
     accessibility: true,
     dots: true,
@@ -31,7 +43,6 @@ const Projects = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
-          
         },
       },
       {
@@ -49,7 +60,7 @@ const Projects = () => {
       <h1 className="text-[40px] text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
         My Projects
       </h1>
-      <div className="gap-20 ">
+      <div className="gap-20">
         <Slider {...settings}>
           {projectDetails.map((project, index) => (
             <ProjectCard
@@ -57,11 +68,17 @@ const Projects = () => {
               src={project.image}
               title={project.name}
               description={project.description[0]}
+              onReadMoreClick={() => togglePopUp(project)}
             />
           ))}
         </Slider>
-        <Popwindow />
       </div>
+      {showPopUp && (
+        <Popwindow
+          project={selectedProject}
+          onClosePopUp={closePopUp}
+        />
+      )}
     </div>
   );
 };
