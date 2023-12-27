@@ -56,10 +56,11 @@ const HeroContent = () => {
           transition={{ delay: 0.4 }}
           className="flex flex-row gap-5 text-gray-200 text-[22px]"
         >
-          <FaLinkedin />
-           <FaGithub />
-           <FaDiscord />
-           <FaTwitter />
+          
+          <a href="https://www.linkedin.com/in/tajul-afreen"><FaLinkedin /></a>
+          <a href="https://www.github.com/tajulafreen"><FaGithub /></a>
+          <a href="https://discord.gg/2gUVQxZ4"><FaDiscord /></a>
+           <a href="https://www.twitter.com/tajulafreen"><FaTwitter /></a>
         </motion.div>
         <motion.a
           variants={slideInFromLeft(1)}
