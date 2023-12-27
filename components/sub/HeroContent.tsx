@@ -9,7 +9,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import { Socials } from "@/constants";
+import { FaGithub, FaLinkedin, FaDiscord, FaTwitter} from "react-icons/fa";
 
 const HeroContent = () => {
   return (
@@ -51,24 +51,20 @@ const HeroContent = () => {
           Mobile, and Software development. Check out my projects and skills.
         </motion.p>
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="flex flex-row gap-5"
+          transition={{ delay: 0.4 }}
+          className="flex flex-row gap-5 text-gray-200 text-[22px]"
         >
-          {Socials.map((social) => (
-            <Image
-              src={social.src}
-              alt={social.name}
-              key={social.name}
-              width={24}
-              height={24}
-            />
-          ))}
+          <FaLinkedin />
+           <FaGithub />
+           <FaDiscord />
+           <FaTwitter />
         </motion.div>
         <motion.a
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          href="#about-me"
         >
           Learn More!
         </motion.a>
