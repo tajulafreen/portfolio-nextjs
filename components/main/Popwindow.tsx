@@ -16,8 +16,13 @@ interface ProjectProps {
 
 const Project = ({ project }: ProjectProps) => {
   return (
-    <div key={project.name}>
-      <Image src={project.image} alt={project.name} />
+    <div key={project.name} className='flex flex-col'>
+      <Image 
+      src={project.image} 
+      alt={project.name} 
+      width={1000}
+        height={1000}
+      />
       <h2>{project.name}</h2>
       <ul>
         {project.technologies.map((desc, index) => (
@@ -39,7 +44,7 @@ const Project = ({ project }: ProjectProps) => {
 
 const Popwindow = () => {
   return (
-    <div>
+    <div cl>
       <h1>All Projects</h1>
       {projectDetails.map((project, index) => (
         <Project key={index} project={project} />
