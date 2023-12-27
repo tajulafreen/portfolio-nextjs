@@ -1,50 +1,58 @@
+"use client"
 import React from "react";
 import {
     RxAngle,
-  RxDiscordLogo,
   RxGithubLogo,
-  RxLinkedinLogo,
   RxShadowInner,
   RxTwitterLogo,
 } from "react-icons/rx";
 
-import { FaFacebook, FaLinkedin} from "react-icons/fa";
-
+import { FaDiscord, FaLinkedin} from "react-icons/fa";
+import { motion } from "framer-motion";
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
-        <div className="w-full flex flex-col items-center justify-center m-auto">
+    <motion.div 
+    initial="hidden"
+      animate="visible"
+      
+    className="w-full h-full  text-gray-200 shadow-lg p-[15px] z-[20] ">
+        <motion.div 
+        initial={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+        className="w-full flex flex-col items-center justify-center m-auto ">
             <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
                 
 
                 <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                     <div className="font-bold text-[16px]">Community</div>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaLinkedin />
+          
+                    <a href="https://www.linkedin.com/in/tajul-afreen"><FaLinkedin /></a>
                         <span className="text-[15px] ml-[6px]">Linkedin</span>    
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
+                    <a href="https://www.github.com/tajulafreen"><RxGithubLogo /></a>
                         <span className="text-[15px] ml-[6px]">Github</span>    
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
                         <RxAngle />
-                        <span className="text-[15px] ml-[6px]">Well Found</span>    
+                        <a href="https://wellfound.com/u/tajul-afreen"><span className="text-[15px] ml-[6px]">Well Found</span></a>    
                     </p>
                 </div>
                 <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                     <div className="font-bold text-[16px]">Social Media</div>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaFacebook />
-                        <span className="text-[15px] ml-[6px]">Facebook</span>    
+                    <FaDiscord />
+                        <span className="text-[15px] ml-[6px]"><a href="https://discord.gg/2gUVQxZ4">Discord</a></span>    
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxTwitterLogo />
+                    <a href="https://www.twitter.com/tajulafreen"><RxTwitterLogo /></a>
                         <span className="text-[15px] ml-[6px]">Twitter</span>    
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
                     <RxShadowInner />
-                        <span className="text-[15px] ml-[6px]">Slack</span>      
+                        <a href="https://join.slack.com/t/newworkspace-xcz8151/shared_invite/zt-29l1d1dx2-~ew5PeeAjPwrrWRp6TJLmA"><span className="text-[15px] ml-[6px]">Slack</span> </a>    
                     </p>
                 </div>
                 <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
@@ -55,11 +63,11 @@ const Footer = () => {
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
                       
-                        <span className="text-[15px] ml-[6px]">Learning about me</span>    
+                        <a href="https://docs.google.com/document/d/1EbIrEA_zuzbal2X17RwAQ5tPWRHYu7ift3Ei_46H-Ek/edit?usp=sharing"><span className="text-[15px] ml-[6px]">Learning about me</span></a>    
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
                   
-                        <span className="text-[15px] ml-[6px]">affushaik9493@gmail.com</span>    
+                        <a href="https://affushaik9493@gmail.com"><span className="text-[15px] ml-[6px]">affushaik9493@gmail.com</span> </a>   
                     </p>
                 </div>
             </div>
@@ -67,8 +75,8 @@ const Footer = () => {
             <div className="mb-[20px] text-[15px] text-center">
                 &copy; Created by Tajul Afreen 2023 Inc. All rights reserved
             </div>
-        </div>
-    </div>
+        </motion.div>
+    </motion.div>
   )
 }
 
