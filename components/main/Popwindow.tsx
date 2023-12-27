@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-
+import { useEffect } from 'react';
 interface PopwindowProps {
   project: {
     name: string;
@@ -16,18 +16,31 @@ interface PopwindowProps {
 }
 
 const Popwindow = ({ project, onClosePopUp }: PopwindowProps) => {
+    useEffect(() => {
+        if (visible) {
+          document.body.style.overflow = 'hidden'; // Disable scrolling when the modal is open
+        } else {
+          document.body.style.overflow = ''; // Restore scrolling when the modal is closed
+        }
+    
+        return () => {
+          document.body.style.overflow = ''; // Ensure scrolling is restored on component unmount
+        };
+      }, [visible]);
+
   if (!project) return null;
 
   return (
     <motion.div 
     initial="hidden"
       animate="visible"
-    className='fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex items-center '>
+    className='fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center overflow-y-hidden  '>
       <motion.div 
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.4 }}
-      className='absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  h-[80%] mt-[3%] w-[80%] bg-black overflow-auto rounded-xl border-[4px] border-[#2A0E61] p-8 flex flex-col gap-4'>
+      className='absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  h-[80%] mt-[3%] lg:w-[60%]
+      w-[80%] bg-black overflow-auto rounded-xl border-[4px] border-[#2A0E61] p-8 flex flex-col gap-4'>
         <button
           onClick={onClosePopUp}
           className='absolute top-2 right-4 text-xl button-primary text-gray-50   h-7 w-7 '
@@ -39,7 +52,7 @@ const Popwindow = ({ project, onClosePopUp }: PopwindowProps) => {
           alt={project.name}
           width={500}
           height={500}
-          className='w-full h-[50%] '
+          className='w-full h-[60%] '
         />
         <h2 className='text-gray-200 text-start text-2xl '>{project.name}</h2>
         <ul className='text-gray-200 flex gap-4 flex-wrap '>
