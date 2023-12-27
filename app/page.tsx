@@ -4,7 +4,7 @@ import Hero from '@/components/main/Hero'
 import Projects from '@/components/main/Projects'
 import Skills from '@/components/main/Skills'
 import Image from 'next/image'
-
+import Footer from '@/components/main/Footer'
 export default function Home() {
   return (
     <main className='w-full h-full'>
@@ -14,6 +14,7 @@ export default function Home() {
         <Encryption />
         <Aboutme />
         <Projects />
+        <Footer />
       </div>
     </main>
   )
