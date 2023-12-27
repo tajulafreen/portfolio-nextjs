@@ -1,3 +1,4 @@
+import Aboutme from '@/components/main/Aboutme'
 import Encryption from '@/components/main/Encryption'
 import Hero from '@/components/main/Hero'
 import Projects from '@/components/main/Projects'
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <Skills />
         <Encryption />
+        <Aboutme />
         <Projects />
       </div>
     </main>
