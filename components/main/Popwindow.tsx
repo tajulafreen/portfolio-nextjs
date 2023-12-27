@@ -1,9 +1,9 @@
 "use client"
 import React from 'react';
-import { projectDetails } from '@/constants/Project';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
-interface ProjectProps {
+interface PopwindowProps {
   project: {
     name: string;
     description: string[];
@@ -11,50 +11,54 @@ interface ProjectProps {
     technologies: string[];
     live: string;
     source: string;
-  };
+  } | null;
+  onClosePopUp: () => void;
 }
 
-const Project = ({ project }: ProjectProps) => {
-  return (
-    <div key={project.name} className='flex flex-col'>
-      <Image 
-      src={project.image} 
-      alt={project.name} 
-      width={1000}
-        height={1000}
-      />
-      <h2>{project.name}</h2>
-      <ul>
-        {project.technologies.map((desc, index) => (
-          <li key={index}>{desc}</li>
-        ))}
-      </ul>
-      <ul>
-        {project.description.map((desc, index) => (
-          <li key={index}>{desc}</li>
-        ))}
-      </ul>
-      <p>Live: <a href={project.live}>{project.live}</a></p>
-      <p>Source: <a href={project.source}>{project.source}</a></p>
-      
-       
-    </div>
-  );
-}
+const Popwindow = ({ project, onClosePopUp }: PopwindowProps) => {
+  if (!project) return null;
 
-interface PopwindowProps {
-    visible: boolean;
-  }
-const Popwindow = ({visible}: PopwindowProps) => {
-    if(!visible) return null
   return (
-    <div className='fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex items-center'>
-      <h1>All Projects</h1>
-      {projectDetails.map((project, index) => (
-        <Project key={index} project={project} />
-      ))}
-    </div>
+    <motion.div 
+    initial="hidden"
+      animate="visible"
+    className='fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex items-center '>
+      <motion.div 
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.4 }}
+      className='absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  h-[80%] mt-[3%] w-[80%] bg-black overflow-auto rounded-xl border-[4px] border-[#2A0E61] p-8 flex flex-col gap-4'>
+        <button
+          onClick={onClosePopUp}
+          className='absolute top-2 right-4 text-xl button-primary text-gray-50   h-7 w-7 '
+        >
+          X
+        </button>
+        <Image
+          src={project.image}
+          alt={project.name}
+          width={500}
+          height={500}
+          className='w-full h-[50%] '
+        />
+        <h2 className='text-gray-200 text-start text-2xl '>{project.name}</h2>
+        <ul className='text-gray-200 flex gap-4 flex-wrap '>
+          {project.technologies.map((tech, index) => (
+            <li key={index} className='border border-[#2A0E61] p-[3px] '><button className='text-[12px]' >{tech}</button></li>
+          ))}
+        </ul>
+        <ul className='flex flex-col text-gray-200'>
+          {project.description.map((desc, index) => (
+            <li key={index} className='text-[16px]'>{desc}</li>
+          ))}
+        </ul>
+        <div className='flex flex-row gap-[3%] justify-end '>
+        <button type='button' className='button-primary text-gray-200 p-3 w-[100px] rounded-2xl border border-[#2A0E61]'><a href={project.live}>Live</a></button>
+        <button type='button' className='button-primary text-gray-200 p-3 w-[100px] rounded-2xl border border-[#2A0E61]'><a href={project.source}>Source</a></button>
+      </div>
+      </motion.div>
+    </motion.div>
   );
-}
+};
 
 export default Popwindow;
