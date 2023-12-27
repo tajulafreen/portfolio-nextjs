@@ -1,10 +1,10 @@
 "use client"
 import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaTwitter } from 'react-icons/fa';
 import Image from "next/image";
 import Link from 'next/link';
 import { motion } from 'framer-motion'
-import { Socials } from "@/constants";
+import { FaGithub, FaLinkedin, FaDiscord} from "react-icons/fa";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -33,7 +33,7 @@ const Navbar = () => {
         </a>
 
         <div className=" md:flex  hidden md:items-center md:justify-around  md:w-[70%] h-auto border border-[#7042f861] bg-[#0300145e] md:mr-20 md:px-[20px] md:py-[10px] md:rounded-full text-gray-200 ">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-evenly w-full">
             <a href="#about-me" className="cursor-pointer">
               About me
             </a>
@@ -43,7 +43,15 @@ const Navbar = () => {
             <a href="#projects" className="cursor-pointer">
               Projects
             </a>
+            <a href="#projects" className="cursor-pointer">
+              Get My Resume
+            </a>
           </div>
+        </div>
+
+        <div className="hidden md:flex md:flex-row md:justify-around  md:gap-5 md:text-gray-200 md:text-[24px]">
+        <FaLinkedin />
+           <FaGithub />
         </div>
 
         {/* Mobile menu button */}
@@ -70,21 +78,15 @@ const Navbar = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="flex flex-row gap-5"
+          className="flex flex-row gap-5 text-gray-200 text-[24px]"
         >
-          {Socials.map((social) => (
-            <Image
-              src={social.src}
-              alt={social.name}
-              key={social.name}
-              width={24}
-              height={24}
-            />
-          ))}
+          <FaLinkedin />
+           <FaGithub />
+           <FaDiscord />
+           <FaTwitter />
         </motion.div>  
             </motion.ul>
                
-
           </div>
         )}
 
