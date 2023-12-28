@@ -9,19 +9,29 @@ import {
 
 import { FaDiscord, FaLinkedin} from "react-icons/fa";
 import { motion } from "framer-motion";
-const Footer = () => {
+
+interface FooterProps {
+    visible: boolean;
+  }
+const Footer = ({ visible }:FooterProps) => {
+    const footerStyle = {
+        zIndex: visible ? 0 : 20, // Set z-index based on visibility
+      };
+
   return (
     <motion.div 
     initial="hidden"
       animate="visible"
       
-    className="w-full h-full  text-gray-200 shadow-lg p-[15px] z-[20] ">
+    className="w-full h-full  text-gray-200 shadow-lg p-[15px] z-[20] "
+    style={footerStyle} 
+    >
         <motion.div 
         initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
         className="w-full flex flex-col items-center justify-center m-auto ">
-            <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
+            <div className="w-full h-full flex flex-row items-center justify-around flex-wrap ">
                 
 
                 <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
