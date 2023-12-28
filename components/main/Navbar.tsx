@@ -59,7 +59,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex md:flex-row md:justify-between  md:gap-5 md:text-gray-200 md:text-[24px]">
-        <a href="https://www.linkedin.com/in/tajul-afreen"><FaLinkedin /></a>
+        <a href="https://www.linkedin.com/in/tajul-afreen" className=''><FaLinkedin /></a>
           <a href="https://www.github.com/tajulafreen"><FaGithub /></a>
           <a href="https://discord.gg/2gUVQxZ4"><FaDiscord /></a>
            <a href="https://www.twitter.com/tajulafreen"><FaTwitter /></a>
@@ -82,13 +82,13 @@ const Navbar = () => {
             transition={{ delay: 0.2 }}
             className="flex flex-col items-center justify-center bg-[#2b1537ec] shadow-2xl text-fuchsia-900  h-[80%] w-[80%] border border-[gray-200] rounded-3xl p-[10%] gap-9 m-[10%]">
             
-            <li className='bg-gray-100  h-[50px] items-center w-[50%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#about-me" className="cursor-pointer" onClick={handleClick}>About me</Link></li>
-            <li className='bg-gray-100  h-[50px] items-center w-[50%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#skills" className="cursor-pointer mb-2" onClick={handleClick}>Skills</Link></li>
-            <li className='bg-gray-100  h-[50px] items-center w-[50%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#projects" className="cursor-pointer mb-2" onClick={handleClick}>Projects</Link></li>
-            <li className='bg-gray-100  h-[50px] items-center w-[50%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#" className="cursor-pointer">
+            <li className='bg-gray-100  h-[50px] items-center w-[60%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#about-me" className="cursor-pointer" onClick={handleClick}>About me</Link></li>
+            <li className='bg-gray-100  h-[50px] items-center w-[60%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#skills" className="cursor-pointer mb-2" onClick={handleClick}>Skills</Link></li>
+            <li className='bg-gray-100  h-[50px] items-center w-[60%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#projects" className="cursor-pointer mb-2" onClick={handleClick}>Projects</Link></li>
+            <li className='bg-gray-100 h-[50px] items-center w-[60%] text-center px-[5px] py-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#" className="cursor-pointer">
               Get My Resume
             </Link></li>
-            <li className='bg-gray-100  h-[50px] items-center w-[50%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#contact" className="cursor-pointer">
+            <li className='bg-gray-100  h-[50px] items-center w-[60%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#contact" className="cursor-pointer">
              Contact
             </Link></li>
             <motion.div
@@ -97,10 +97,10 @@ const Navbar = () => {
           transition={{ delay: 0.2 }}
           className="flex flex-row gap-5 text-gray-200 text-[24px]"
         >
-          <a href="https://www.linkedin.com/in/tajul-afreen"><FaLinkedin /></a>
-          <a href="https://www.github.com/tajulafreen"><FaGithub /></a>
-          <a href="https://discord.gg/2gUVQxZ4"><FaDiscord /></a>
-           <a href="https://www.twitter.com/tajulafreen"><FaTwitter /></a>
+          <a href="https://www.linkedin.com/in/tajul-afreen" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaLinkedin /></a>
+          <a href="https://www.github.com/tajulafreen" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaGithub /></a>
+          <a href="https://discord.gg/2gUVQxZ4" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaDiscord /></a>
+           <a href="https://www.twitter.com/tajulafreen" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaTwitter /></a>
         </motion.div>  
             </motion.ul>
                
