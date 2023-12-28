@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { useEffect } from 'react';
+
 interface PopwindowProps {
   project: {
     name: string;
@@ -16,25 +16,13 @@ interface PopwindowProps {
 }
 
 const Popwindow = ({ project, onClosePopUp }: PopwindowProps) => {
-    useEffect(() => {
-        if (visible) {
-          document.body.style.overflow = 'hidden'; // Disable scrolling when the modal is open
-        } else {
-          document.body.style.overflow = ''; // Restore scrolling when the modal is closed
-        }
-    
-        return () => {
-          document.body.style.overflow = ''; // Ensure scrolling is restored on component unmount
-        };
-      }, [visible]);
-
   if (!project) return null;
 
   return (
     <motion.div 
     initial="hidden"
       animate="visible"
-    className='fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center overflow-y-hidden  '>
+    className='fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex items-center overflow-hidden '>
       <motion.div 
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
