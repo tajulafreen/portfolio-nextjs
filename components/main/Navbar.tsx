@@ -49,9 +49,7 @@ const Navbar = () => {
             <a href="#projects" className="cursor-pointer">
               Projects
             </a>
-            <a href="#" className="cursor-pointer">
-              Get My Resume
-            </a>
+            <a href="/Resume.pdf" download="Resume" className='cursor-pointer '>Get My Resume </a>
             <a href="#contact" className="cursor-pointer">
               Contact
             </a>
@@ -85,9 +83,7 @@ const Navbar = () => {
             <li className='bg-gray-100  h-[50px] items-center w-[60%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#about-me" className="cursor-pointer" onClick={handleClick}>About me</Link></li>
             <li className='bg-gray-100  h-[50px] items-center w-[60%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#skills" className="cursor-pointer mb-2" onClick={handleClick}>Skills</Link></li>
             <li className='bg-gray-100  h-[50px] items-center w-[60%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#projects" className="cursor-pointer mb-2" onClick={handleClick}>Projects</Link></li>
-            <li className='bg-gray-100 h-[50px] items-center w-[60%] text-center px-[5px] py-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#" className="cursor-pointer">
-              Get My Resume
-            </Link></li>
+            <li className='bg-gray-100 h-[50px] items-center w-[60%] text-center px-[5px] py-[15px] border border-[fuchsia-900] rounded-3xl'><a href="/Resume.pdf" download="Resume">Get My Resume </a></li>
             <li className='bg-gray-100  h-[50px] items-center w-[60%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#contact" className="cursor-pointer">
              Contact
             </Link></li>
