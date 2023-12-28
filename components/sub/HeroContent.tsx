@@ -64,7 +64,7 @@ const HeroContent = () => {
         </motion.div>
         <motion.a
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          className="py-2 button-primary text-center text-white cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 rounded-lg max-w-[200px]"
           href="#about-me"
         >
           Learn More!
