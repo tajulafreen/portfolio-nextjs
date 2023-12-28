@@ -16,6 +16,12 @@ const Navbar = () => {
       setIsMenuOpen(false);
     }
   };
+  if (isMenuOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
       <div className="w-[90%] h-full flex flex-row items-center justify-between m-auto px-[10px]">
@@ -32,8 +38,8 @@ const Navbar = () => {
           </span>
         </a>
 
-        <div className=" md:flex  hidden md:items-center md:justify-around  md:w-[70%] h-auto border border-[#7042f861] bg-[#0300145e] md:mr-20 md:px-[20px] md:py-[10px] md:rounded-full text-gray-200 ">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-evenly w-full">
+        <div className=" md:flex  hidden w-[90%] h-auto border border-[#7042f861] bg-[#0300145e]  md:px-[20px] md:py-[10px] md:rounded-full text-gray-200 ">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full gap-5">
             <a href="#about-me" className="cursor-pointer">
               About me
             </a>
@@ -49,7 +55,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="hidden md:flex md:flex-row md:justify-around  md:gap-5 md:text-gray-200 md:text-[24px]">
+        <div className="hidden md:flex md:flex-row md:justify-between  md:gap-5 md:text-gray-200 md:text-[24px]">
         <a href="https://www.linkedin.com/in/tajul-afreen"><FaLinkedin /></a>
           <a href="https://www.github.com/tajulafreen"><FaGithub /></a>
           <a href="https://discord.gg/2gUVQxZ4"><FaDiscord /></a>
@@ -76,6 +82,9 @@ const Navbar = () => {
             <li className='bg-gray-100  h-[50px] items-center w-[50%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#about-me" className="cursor-pointer" onClick={handleClick}>About me</Link></li>
             <li className='bg-gray-100  h-[50px] items-center w-[50%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#skills" className="cursor-pointer mb-2" onClick={handleClick}>Skills</Link></li>
             <li className='bg-gray-100  h-[50px] items-center w-[50%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><Link href="#projects" className="cursor-pointer mb-2" onClick={handleClick}>Projects</Link></li>
+            <li className='bg-gray-100  h-[50px] items-center w-[50%] text-center p-[15px] border border-[fuchsia-900] rounded-3xl'><a href="#projects" className="cursor-pointer">
+              Get My Resume
+            </a></li>
             <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
