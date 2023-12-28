@@ -30,7 +30,7 @@ const ContactForm: React.FC = () => {
   return (
     <div className='h-[20%] px-[5%] z-[20] isolate flex flex-col  py-[5%]'>
         <h1 className="text-[40px]  text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-9">Contact Me</h1>
-    <div className='flex flex-col md:flex-row gap-9 justify-evenly items-center '>
+    <div className='flex flex-col md:flex-row gap-9 justify-evenly items-center' id='contact'>
         <div className='md:w-[40%] w-[80%] flex flex-col'>
             <p className='text-gray-200 text-[24px]'>&quot;Have a thrilling project on your mind? Let&apos;s turn it into reality together!</p>
             <br></br>
