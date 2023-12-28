@@ -36,30 +36,30 @@ const ContactForm: React.FC = () => {
             <br></br>
             <p className='text-gray-200 text-[22px]'>I&apos;m passionate about diving into fresh concepts and bringing them to life. If you&apos;re looking for someone enthusiastic to collaborate on your project, I&apos;m all ears! Don&apos;t hesitate to reach out; I&apos;d love to explore your ideas and discuss how we can make them flourish.&quot;</p>
         </div>
-        <div className='py-[25px] px-[3%] border-[2px] border-[#2A0E61] h-[550px] w-[80%] md:w-[40%] rounded-2xl'>
+        <div className='py-[25px] px-[3%]  h-[550px] w-[80%] md:w-[40%] rounded-2xl'>
     <form ref={form} onSubmit={sendEmail} >
         <ul className='flex flex-col gap-8'>
        <li className='flex flex-col'>    
       <label className='text-gray-200'>
         Name
       </label>
-      <input type="text" name="from_name" className='w-full rounded-2xl h-[50px] p-2' placeholder='name' maxLength={30}  required />
+      <input type="text" name="from_name" className='w-full rounded-2xl h-[50px] p-2 invalid:border-pink-500 invalid:text-pink-600 border' placeholder='name' maxLength={30} minLength={3} required />
       </li> 
       <li className='flex flex-col'> 
       <label className='text-gray-200'>
         Email
       </label>
-      <input type="email" name="from_email"  className='w-full rounded-2xl h-[50px] p-2' placeholder='email' required/>
+      <input type="email" name="from_email"  className='w-full rounded-2xl h-[50px] p-2 invalid:border-pink-500 invalid:text-pink-600' placeholder='email' required/>
       </li> 
       <li className='flex flex-col'> 
       <label className='text-gray-200'>
         Message
       </label>
-      <textarea name="message"  className='w-full rounded-2xl md:h-[200px] h-[150px] p-2' placeholder='message' maxLength={500} required/>
+      <textarea name="message"  className='w-full rounded-2xl md:h-[200px] h-[150px] p-2 invalid:border-pink-500 invalid:text-pink-600' placeholder='message' maxLength={500} minLength={10} required/>
       </li> 
       <li className='text-right'> 
-        <button className='p-3 w-[150px] border border-[#2A0E61] button-primary  rounded-2xl'>
-      <input type="submit" value="Send" className='text-gray-200'/>
+        <button className='p-3 w-[150px] border border-[#2A0E61] button-primary  rounded-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'>
+      <input type="submit" value="Send" className='text-gray-200 text-[18px]'/>
       </button>
       </li> 
       </ul>
