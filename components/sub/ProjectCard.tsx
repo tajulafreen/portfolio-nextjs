@@ -26,7 +26,7 @@ const ProjectCard = ({ src, title, description, onReadMoreClick }: Props) => {
       <button
         type="button"
         onClick={onReadMoreClick}
-        className="bottom-3 h-[40px] w-[150px] button-primary text-center text-white cursor-pointer rounded-xl items-center"
+        className="bottom-3 h-[40px] w-[150px] button-primary text-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-white cursor-pointer rounded-xl items-center"
       >
         read more
       </button>
