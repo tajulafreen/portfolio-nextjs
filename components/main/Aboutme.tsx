@@ -16,7 +16,7 @@ function Aboutme() {
         initial="hidden"
         animate="visible"
         variants={slideInFromLeft(1)}
-        className='flex flex-col items-center justify-center px-14 md:px-80 relative'>
+        className='flex flex-col items-center justify-center px-9 lg:px-64  md:px-32 relative'>
             <h1 className='text-[40px]  text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'>About Me</h1>
             <p className='text-lg text-gray-200 text-center'>I specialize in crafting top-notch digital products, features, and websites that cater to diverse business 
             needs. With a robust portfolio showcasing my work and expertise, I excel in translating ideas into functional and visually captivating
