@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import ProjectCard from '../sub/ProjectCard';
 import { projectDetails } from '@/constants/Project';
-import Slider from 'react-slick';
+import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Popwindow from './Popwindow';
