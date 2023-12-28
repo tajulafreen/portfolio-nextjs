@@ -1,10 +1,9 @@
 "use client"
 import React from 'react'
-import { Socials } from "@/constants";
-import Image from 'next/image';
 import { motion } from "framer-motion";
 import { slideInFromLeft } from "@/utils/motion";
 import { FaDiscord, FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa";
+
 function Aboutme() {
   return (
     <motion.div 
@@ -32,7 +31,8 @@ function Aboutme() {
            <a href="https://www.twitter.com/tajulafreen" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaTwitter /></a>
            </div>
            <button 
-           className='h-[40px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 w-[200px] button-primary text-center text-white cursor-pointer rounded-xl '>Get My Resume</button>
+           className='h-[40px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 w-[200px] button-primary text-center text-white cursor-pointer rounded-xl '>
+            <a href="/Resume.pdf" download="Resume">Get My Resume </a></button>
         </motion.div>
     </motion.div>
   )
