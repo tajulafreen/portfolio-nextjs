@@ -6,7 +6,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Popwindow from './Popwindow';
-
+import Footer from './Footer';
 const Projects = () => {
   const [showPopUp, setShowPopUp] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -19,6 +19,12 @@ const Projects = () => {
   const closePopUp = () => {
     setShowPopUp(false);
   };
+  
+  if (showPopUp) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
 
   const settings = {
     accessibility: true,
@@ -56,7 +62,8 @@ const Projects = () => {
   };
 
   return (
-    <div className="p-20 z-[20]" id="projects">
+    <div className='z-[20]'>
+    <div className="p-20 " id="projects">
       <h1 className="text-[40px] text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
         My Projects
       </h1>
@@ -79,6 +86,10 @@ const Projects = () => {
           onClosePopUp={closePopUp}
         />
       )}
+      </div>
+      <div className='mt-[5%]'>
+      <Footer visible={showPopUp}/>
+      </div>
     </div>
   );
 };
