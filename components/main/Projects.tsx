@@ -6,8 +6,6 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Popwindow from './Popwindow';
-import Footer from './Footer';
-import ContactForm from './Contactform';
 
 const Projects = () => {
   const [showPopUp, setShowPopUp] = useState(false);
@@ -88,10 +86,6 @@ const Projects = () => {
           onClosePopUp={closePopUp}
         />
       )}
-      </div>
-      <div className='flex flex-col gap-[5%] '>
-      <ContactForm />
-      <Footer visible={showPopUp}/>
       </div>
     </div>
   );
