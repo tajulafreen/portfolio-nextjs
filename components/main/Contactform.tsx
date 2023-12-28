@@ -1,36 +1,43 @@
 "use client"
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 
-function Contactform() {
-    const form = useRef();
+const ContactForm: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-      .then((result) => {
+    if (form && form.current) {
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+        .then((result: { text: any; }) => {
           console.log(result.text);
-      }, (error) => {
+        })
+        .catch((error: { text: any; }) => {
           console.log(error.text);
-      });
+        });
+    }
   };
 
   return (
+    <div className='bg-black'>
     <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+      <label className='text-gray-200'>
+        Name
+        <input type="text" name="user_name" />
+      </label>
+      <label className='text-gray-200'>
+        Email
+        <input type="email" name="user_email" />
+      </label>
+      <label className='text-gray-200'>
+        Message
+        <textarea name="message" />
+      </label>
+      <input type="submit" value="Send" className='text-gray-200'/>
     </form>
+    </div>
   );
 };
-  return (
-    <div>Contactform</div>
-  )
-}
 
-export default Contactform
+export default ContactForm;
