@@ -6,7 +6,7 @@ import { Toaster, toast} from 'sonner';
 const ContactForm: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
   
-
+  
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
