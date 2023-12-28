@@ -10,21 +10,21 @@ import {
 import { FaDiscord, FaLinkedin} from "react-icons/fa";
 import { motion } from "framer-motion";
 
-interface FooterProps {
-    visible: boolean;
-  }
-const Footer = ({ visible }:FooterProps) => {
-    const footerStyle = {
-        zIndex: visible ? 0 : 20, // Set z-index based on visibility
-      };
+// interface FooterProps {
+//     visible: boolean;
+//   }
+const Footer = () => {
+    // const footerStyle = {
+    //     zIndex: visible ? 0 : 20, // Set z-index based on visibility
+    //   };
 
   return (
     <motion.div 
     initial="hidden"
       animate="visible"
       
-    className="w-full h-full  text-gray-200 shadow-lg p-[15px] z-[20] "
-    style={footerStyle} 
+    className="w-full h-full  text-gray-200 shadow-lg p-[15px] z-[30] "
+    // style={footerStyle} 
     >
         <motion.div 
         initial={{ opacity: 1 }}
