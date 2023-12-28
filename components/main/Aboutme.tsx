@@ -26,14 +26,13 @@ function Aboutme() {
              I am here to turn your concepts into remarkable digital experiences. Feel free to explore my portfolio and reach out to discuss your
               project needs further.</p>
            <div className='flex gap-3 p-4 my-4 text-gray-200 text-[24px]'>
-           <a href="https://www.linkedin.com/in/tajul-afreen"><FaLinkedin /></a>
-          <a href="https://www.github.com/tajulafreen"><FaGithub /></a>
-          <a href="https://discord.gg/2gUVQxZ4"><FaDiscord /></a>
-           <a href="https://www.twitter.com/tajulafreen"><FaTwitter /></a>
+           <a href="https://www.linkedin.com/in/tajul-afreen" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaLinkedin /></a>
+          <a href="https://www.github.com/tajulafreen" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaGithub /></a>
+          <a href="https://discord.gg/2gUVQxZ4" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaDiscord /></a>
+           <a href="https://www.twitter.com/tajulafreen" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaTwitter /></a>
            </div>
-           <motion.button 
-           variants={slideInFromLeft(1)}
-           className='h-[40px]  w-[200px] button-primary text-center text-white cursor-pointer rounded-xl '>Get My Resume</motion.button>
+           <button 
+           className='h-[40px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 w-[200px] button-primary text-center text-white cursor-pointer rounded-xl '>Get My Resume</button>
         </motion.div>
     </motion.div>
   )
