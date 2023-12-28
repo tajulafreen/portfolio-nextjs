@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
-      <div className="w-[90%] h-full flex flex-row items-center justify-between m-auto px-[10px]">
+      <div className="w-[100%] h-full flex flex-row items-center justify-between  m-auto px-[10px] gap-6">
         <a href="#about-me" className="h-auto w-auto flex flex-row items-center">
           <Image
             src="/NavLogo.jpeg"
@@ -38,8 +38,8 @@ const Navbar = () => {
           </span>
         </a>
 
-        <div className=" md:flex  hidden w-[90%] h-auto border border-[#7042f861] bg-[#0300145e]  md:px-[20px] md:py-[10px] md:rounded-full text-gray-200 ">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full gap-5">
+        <div className=" md:flex  hidden w-[70%] h-auto border border-[#7042f861] bg-[#0300145e]  md:px-[20px] md:py-[10px] md:rounded-full text-gray-200 ">
+          <div className="flex md:flex-row md:items-center md:justify-between lg:justify-around w-full gap-5">
             <a href="#about-me" className="cursor-pointer">
               About me
             </a>
