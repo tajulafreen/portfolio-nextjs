@@ -40,17 +40,17 @@ const Navbar = () => {
 
         <div className=" md:flex  hidden w-[70%] h-auto border border-[#7042f861] bg-[#0300145e]  md:px-[20px] md:py-[10px] md:rounded-full text-gray-200 ">
           <div className="flex md:flex-row md:items-center md:justify-between lg:justify-around w-full gap-5">
-            <a href="#about-me" className="cursor-pointer">
+            <a href="#about-me" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
               About me
             </a>
-            <a href="#skills" className="cursor-pointer">
+            <a href="#skills" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
               Skills
             </a>
-            <a href="#projects" className="cursor-pointer">
+            <a href="#projects" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
               Projects
             </a>
-            <a href="/Resume.pdf" download="Resume" className='cursor-pointer '>Get My Resume </a>
-            <a href="#contact" className="cursor-pointer">
+            <a href="/Resume.pdf" download="Resume" className='cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'>Get My Resume </a>
+            <a href="#contact" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 ">
               Contact
             </a>
           </div>
