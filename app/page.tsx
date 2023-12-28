@@ -14,7 +14,6 @@ export default function Home() {
         <Encryption />
         <Aboutme />
         <Projects />
-        <ContactForm />
       </div>
     </main>
   )
