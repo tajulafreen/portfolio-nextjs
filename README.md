@@ -59,7 +59,7 @@ This is the details of how to get in touch with the developer.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Go to Live site](https://programkingabel.github.io/)
+- [Go to Live site](https://tajul-afreen-portfolio.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
