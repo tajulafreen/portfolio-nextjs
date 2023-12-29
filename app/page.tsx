@@ -1,5 +1,4 @@
 import Aboutme from '@/components/main/Aboutme'
-import ContactForm from '@/components/main/Contactform'
 import Encryption from '@/components/main/Encryption'
 import Footer from '@/components/main/Footer'
 import Hero from '@/components/main/Hero'
@@ -15,7 +14,6 @@ export default function Home() {
         <Encryption />
         <Aboutme />
         <Projects />
-        <ContactForm />
         <Footer />
       </div>
     </main>
