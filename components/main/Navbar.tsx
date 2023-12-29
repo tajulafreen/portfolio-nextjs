@@ -1,26 +1,38 @@
 "use client"
-import { useState } from 'react';
-import { FaBars, FaTimes, FaTwitter } from 'react-icons/fa';
-import Image from "next/image";
+import { useState, useEffect } from 'react';
+import { FaBars, FaTimes, FaTwitter, FaGithub, FaLinkedin, FaDiscord } from 'react-icons/fa';
+import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin, FaDiscord} from "react-icons/fa";
+import { motion } from 'framer-motion';
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    const handleBodyOverflow = () => {
+      if (isMenuOpen && typeof window !== 'undefined') {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+    };
+
+    handleBodyOverflow();
+
+    return () => {
+      document.body.style.overflow = 'auto'; // Reset overflow when unmounting component
+    };
+  }, [isMenuOpen]);
+
   const handleClick = () => {
     if (window.innerWidth <= 768) {
       setIsMenuOpen(false);
     }
   };
-  if (isMenuOpen) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
 
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
