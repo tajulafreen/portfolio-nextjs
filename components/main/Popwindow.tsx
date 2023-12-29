@@ -27,7 +27,7 @@ const Popwindow = ({ project, onClosePopUp }: PopwindowProps) => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.8 }}
-      className='absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  h-[80%] mt-[3%] lg:w-[60%]
+      className='absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  h-[80%] mt-[2%] lg:w-[50%]
       w-[80%] bg-black overflow-auto rounded-xl border-[4px] border-[#2A0E61] p-8 flex flex-col gap-4'>
         <button
           onClick={onClosePopUp}
