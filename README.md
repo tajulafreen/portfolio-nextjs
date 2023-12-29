@@ -1,36 +1,190 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a name="readme-top"></a>
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+  <h3><b>Tajul Afreen Portfolio </b></h3>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+</div>
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+# 📖 [Tajul-Afreen-Portfolio] <a name="about-project"></a>
+
+**Tajul Afreen Portfolio** is a responsive web portfolio application where a developer can keep record of their previous projects, accoplishments, skills, contacts and CV to make it easier for them to display and present their developer talents.
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://nextjs.org/">NextJs</a></li>
+    <li><a href="https://tailwindcss.com/">Tailwind</a></li>
+    <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
+    <li><a href="https://threejs.org/">ThreeJs</a></li>
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+
+- **[Mobile Responsive]**
+
+This is the mobile responsive version for now as it is build using the mobile first development approach.
+
+- **[Header Section]**
+
+This is the banner section with beautifully customized images and brief description of who the developer is.
+
+- **[Works Section]**
+
+This is the works area with beautifully customized images and brief description of sample projects the developer has worked on.
+
+- **[About Section]**
+
+This is the details of how to get in touch with the developer.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Go to Live site](https://programkingabel.github.io/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+Code Editor preferrably Vs Code:
+
+```sh
+  https://visualstudio.microsoft.com
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Github Account:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+  https://github.com/
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Npm installed:
 
-## Learn More
+```sh
+  https://nodejs.org/en/download
+```
 
-To learn more about Next.js, take a look at the following resources:
+A LiveServer/ Localhost/ VS Code Live Server Extension
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A working and up to date Browser
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Setup
 
-## Deploy on Vercel
+Clone this repository to your desired folder:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+  git clone command
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Install this project with:
+
+Linters:
+
+## run:
+
+```sh
+  npm i
+```
+
+eslintrc run
+
+```sh
+ npx eslint . --fix
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  npm run dev
+```
+
+### Deployment
+
+You can deploy this project using:
+
+Localhost on your computer through a local Server:
+
+```sh
+ https://www.apachefriends.org/download.html
+```
+
+Or:
+
+Github Pages:
+
+```sh
+ https://pages.github.com/
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Tajul Afreen**
+
+- GitHub: [@Tajul Afreen](https://github.com/tajulafreen)
+- Twitter: [@Tajul Afreen](https://twitter.com/tajulafreen)
+- LinkedIn: [@Tajul Afreen](https://www.linkedin.com/in/tajul-afreen)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Add Live project samples]**
+- [ ] **[Add dynamic widgets]**
+- [ ] **[Develop Dekstop Version]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project follow me on Github and give it a star to motivate build more cool staff. Thank you.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank the Microverse Community, My stand up team and coding partners who we work tirelessly to make it possible.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE.TXT) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
