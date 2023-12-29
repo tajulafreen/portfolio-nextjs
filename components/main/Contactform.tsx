@@ -3,9 +3,16 @@ import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import { Toaster, toast} from 'sonner';
 
-const ContactForm: React.FC = () => {
+interface ContactProps {
+  visible: boolean;
+}
+const ContactForm: React.FC<ContactProps> = ({ visible }) => {
   const form = useRef<HTMLFormElement>(null);
-  
+  const contactStyle = {
+        zIndex: visible ? 0 : 20, // Set z-index based on visibility
+      };
+
+
   
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -28,7 +35,9 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className='h-[20%] px-[5%] z-[20] isolate flex flex-col  py-[5%]'>
+    <div className='h-[20%] px-[5%] z-[20] isolate flex flex-col  py-[5%]'
+    style={contactStyle} 
+    >
         <h1 className="text-[40px]  text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-9">Contact Me</h1>
     <div className='flex flex-col md:flex-row gap-9 justify-evenly items-center' id='contact'>
         <div className='md:w-[40%] w-[80%] flex flex-col'>
