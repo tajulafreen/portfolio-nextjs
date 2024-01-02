@@ -10,13 +10,9 @@ import {
 import { FaDiscord, FaLinkedin} from "react-icons/fa";
 import { motion } from "framer-motion";
 
-// interface FooterProps {
-//     visible: boolean;
-//   }
+
 const Footer = () => {
-    // const footerStyle = {
-    //     zIndex: visible ? 0 : 20, // Set z-index based on visibility
-    //   };
+
 
   return (
     <motion.div 
@@ -36,46 +32,46 @@ const Footer = () => {
 
                 <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                     <div className="font-bold text-[16px]">Community</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                    <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
           
                     <a href="https://www.linkedin.com/in/tajul-afreen"><FaLinkedin /></a>
                         <span className="text-[15px] ml-[6px]">Linkedin</span>    
                     </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                    <a href="https://www.github.com/tajulafreen"><RxGithubLogo /></a>
+                    <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
+                    <a href="https://www.github.com/tajulafreen "><RxGithubLogo /></a>
                         <span className="text-[15px] ml-[6px]">Github</span>    
                     </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                    <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                         <RxAngle />
                         <a href="https://wellfound.com/u/tajul-afreen"><span className="text-[15px] ml-[6px]">Well Found</span></a>    
                     </p>
                 </div>
                 <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                     <div className="font-bold text-[16px]">Social Media</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                    <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                     <FaDiscord />
                         <span className="text-[15px] ml-[6px]"><a href="https://discord.gg/2gUVQxZ4">Discord</a></span>    
                     </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                    <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                     <a href="https://www.twitter.com/tajulafreen"><RxTwitterLogo /></a>
                         <span className="text-[15px] ml-[6px]">Twitter</span>    
                     </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                    <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                     <RxShadowInner />
                         <a href="https://join.slack.com/t/newworkspace-xcz8151/shared_invite/zt-29l1d1dx2-~ew5PeeAjPwrrWRp6TJLmA"><span className="text-[15px] ml-[6px]">Slack</span> </a>    
                     </p>
                 </div>
                 <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                     <div className="font-bold text-[16px]">About</div>
-                   <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                   <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                      
                         <span className="text-[15px] ml-[6px]">Become Sponsor</span>    
                     </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                    <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                       
                         <a href="https://docs.google.com/document/d/1EbIrEA_zuzbal2X17RwAQ5tPWRHYu7ift3Ei_46H-Ek/edit?usp=sharing"><span className="text-[15px] ml-[6px]">Learning about me</span></a>    
                     </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                    <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                   
                         <a href="https://affushaik9493@gmail.com"><span className="text-[15px] ml-[6px]">affushaik9493@gmail.com</span> </a>   
                     </p>

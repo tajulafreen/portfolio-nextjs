@@ -52,27 +52,27 @@ const Navbar = () => {
 
         <div className=" md:flex  hidden w-[70%] h-auto border border-[#7042f861] bg-[#0300145e]  md:px-[20px] md:py-[10px] md:rounded-full text-gray-200 ">
           <div className="flex md:flex-row md:items-center md:justify-between lg:justify-around w-full gap-5">
-            <a href="#about-me" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+            <a href="#about-me" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-purple-500">
               About me
             </a>
-            <a href="#skills" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+            <a href="#skills" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-purple-500">
               Skills
             </a>
-            <a href="#projects" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+            <a href="#projects" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-purple-500">
               Projects
             </a>
-            <a href="/Resume.pdf" download="Resume" className='cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'>Get My Resume </a>
-            <a href="#contact" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 ">
+            <a href="/Resume.pdf" download="Resume" className='cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-purple-500'>Get My Resume </a>
+            <a href="#contact" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-purple-500">
               Contact
             </a>
           </div>
         </div>
 
         <div className="hidden md:flex md:flex-row md:justify-between  md:gap-5 md:text-gray-200 md:text-[24px]">
-        <a href="https://www.linkedin.com/in/tajul-afreen" className=''><FaLinkedin /></a>
-          <a href="https://www.github.com/tajulafreen"><FaGithub /></a>
-          <a href="https://discord.gg/2gUVQxZ4"><FaDiscord /></a>
-           <a href="https://www.twitter.com/tajulafreen"><FaTwitter /></a>
+        <a href="https://www.linkedin.com/in/tajul-afreen hover:text-purple-500" className=''><FaLinkedin /></a>
+          <a href="https://www.github.com/tajulafreen hover:text-purple-500"><FaGithub /></a>
+          <a href="https://discord.gg/2gUVQxZ4 hover:text-purple-500"><FaDiscord /></a>
+           <a href="https://www.twitter.com/tajulafreen hover:text-purple-500"><FaTwitter /></a>
         </div>
 
         {/* Mobile menu button */}
