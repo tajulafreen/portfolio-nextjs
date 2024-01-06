@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-
+import '../styles/scrollbarstyles.css'
 interface PopwindowProps {
   project: {
     name: string;
@@ -20,9 +20,10 @@ const Popwindow = ({ project, onClosePopUp }: PopwindowProps) => {
 
   return (
     <motion.div 
-    initial="hidden"
-      animate="visible"
-    className='fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex items-center overflow-hidden z-[30]'>
+    initial='hidden'
+    animate='visible'
+    className='fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex items-center overflow-hidden z-[30]'
+    >
       <motion.div 
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
