@@ -27,7 +27,7 @@ function Aboutme() {
            <div className='flex gap-3 p-4 my-4 text-gray-200 text-[24px]'>
            <a href="https://www.linkedin.com/in/tajul-afreen" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaLinkedin /></a>
           <a href="https://www.github.com/tajulafreen" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaGithub /></a>
-          <a href="https://discord.gg/2gUVQxZ4" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaDiscord /></a>
+          <a href="https://discord.gg/4ffR2vaHAG" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaDiscord /></a>
            <a href="https://www.twitter.com/tajulafreen" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaTwitter /></a>
            </div>
            <button 
