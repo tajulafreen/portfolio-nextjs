@@ -35,7 +35,7 @@ const ContactForm: React.FC<ContactProps> = ({ visible }) => {
   };
 
   return (
-    <div className='h-[20%] px-[5%] z-[20] isolate flex flex-col  py-[5%]'
+    <div className='h-[20%] px-[5%] z-[20] isolate flex flex-col mb-[-7%]  md:py-[5%]'
     style={contactStyle} 
     >
         <h1 className="text-[40px]  text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-9">Contact Me</h1>
@@ -49,22 +49,16 @@ const ContactForm: React.FC<ContactProps> = ({ visible }) => {
     <form ref={form} onSubmit={sendEmail} >
         <ul className='flex flex-col gap-8'>
        <li className='flex flex-col'>    
-      <label className='text-gray-200'>
-        Name
-      </label>
-      <input type="text" name="from_name" className='w-full rounded-2xl h-[50px] p-2 invalid:border-pink-500 invalid:text-pink-600 border' placeholder='name' maxLength={30} minLength={3} required />
+      
+      <input type="text" name="from_name" className='w-full rounded-2xl h-[50px] p-2 invalid:border-pink-500 invalid:text-pink-600 border' placeholder='Name' maxLength={30} minLength={3} required />
       </li> 
       <li className='flex flex-col'> 
-      <label className='text-gray-200'>
-        Email
-      </label>
-      <input type="email" name="from_email"  className='w-full rounded-2xl h-[50px] p-2 invalid:border-pink-500 invalid:text-pink-600' placeholder='email' required/>
+      
+      <input type="email" name="from_email"  className='w-full rounded-2xl h-[50px] p-2 invalid:border-pink-500 invalid:text-pink-600' placeholder='Email' required/>
       </li> 
       <li className='flex flex-col'> 
-      <label className='text-gray-200'>
-        Message
-      </label>
-      <textarea name="message"  className='w-full rounded-2xl md:h-[200px] h-[150px] p-2 invalid:border-pink-500 invalid:text-pink-600' placeholder='message' maxLength={500} minLength={10} required/>
+      
+      <textarea name="message"  className='w-full rounded-2xl md:h-[200px] h-[150px] p-2 invalid:border-pink-500 invalid:text-pink-600' placeholder='Message' maxLength={500} minLength={10} required/>
       </li> 
       <li className='text-right'> 
         <button className='p-3 w-[150px] border border-[#2A0E61] button-primary  rounded-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'>
