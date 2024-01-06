@@ -66,7 +66,7 @@ const Projects = () => {
 
   return (
     <div className='z-[20]'>
-      <div className="p-20 " id="projects">
+      <div className="p-20 mx-auto " id="projects">
         <h1 className="text-[40px] text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
           My Projects
         </h1>
