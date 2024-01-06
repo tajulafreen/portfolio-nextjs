@@ -34,12 +34,12 @@ const Footer = () => {
                     <div className="font-bold text-[16px]">Community</div>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
           
-                    <a href="https://www.linkedin.com/in/tajul-afreen"><FaLinkedin /></a>
-                        <span className="text-[15px] ml-[6px]">Linkedin</span>    
+                    <FaLinkedin />
+                    <a href="https://www.linkedin.com/in/tajul-afreen"><span className="text-[15px] ml-[6px]">Linkedin</span></a>    
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
-                    <a href="https://www.github.com/tajulafreen "><RxGithubLogo /></a>
-                        <span className="text-[15px] ml-[6px]">Github</span>    
+                    <RxGithubLogo />
+                    <a href="https://www.github.com/tajulafreen "> <span className="text-[15px] ml-[6px]">Github</span></a>   
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                         <RxAngle />
@@ -50,11 +50,11 @@ const Footer = () => {
                     <div className="font-bold text-[16px]">Social Media</div>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                     <FaDiscord />
-                        <span className="text-[15px] ml-[6px]"><a href="https://discord.gg/2gUVQxZ4">Discord</a></span>    
+                        <span className="text-[15px] ml-[6px]"><a href="https://discord.gg/4ffR2vaHAG">Discord</a></span>    
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
-                    <a href="https://www.twitter.com/tajulafreen"><RxTwitterLogo /></a>
-                        <span className="text-[15px] ml-[6px]">Twitter</span>    
+                   <RxTwitterLogo />
+                   <a href="https://www.twitter.com/tajulafreen"><span className="text-[15px] ml-[6px]">Twitter</span></a>    
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                     <RxShadowInner />
