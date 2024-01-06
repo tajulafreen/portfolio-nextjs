@@ -69,10 +69,10 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex md:flex-row md:justify-between  md:gap-5 md:text-gray-200 md:text-[24px]">
-        <a href="https://www.linkedin.com/in/tajul-afreen hover:text-purple-500" className=''><FaLinkedin /></a>
-          <a href="https://www.github.com/tajulafreen hover:text-purple-500"><FaGithub /></a>
-          <a href="https://discord.gg/2gUVQxZ4 hover:text-purple-500"><FaDiscord /></a>
-           <a href="https://www.twitter.com/tajulafreen hover:text-purple-500"><FaTwitter /></a>
+        <a href="https://www.linkedin.com/in/tajul-afreen" className=' hover:text-purple-500'><FaLinkedin /></a>
+          <a href="https://www.github.com/tajulafreen" className=' hover:text-purple-500'><FaGithub /></a>
+          <a href="https://discord.gg/4ffR2vaHAG" className=' hover:text-purple-500'><FaDiscord /></a>
+           <a href="https://www.twitter.com/tajulafreen" className=' hover:text-purple-500'><FaTwitter /></a>
         </div>
 
         {/* Mobile menu button */}
@@ -107,7 +107,7 @@ const Navbar = () => {
         >
           <a href="https://www.linkedin.com/in/tajul-afreen" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaLinkedin /></a>
           <a href="https://www.github.com/tajulafreen" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaGithub /></a>
-          <a href="https://discord.gg/2gUVQxZ4" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaDiscord /></a>
+          <a href="https://discord.gg/4ffR2vaHAG" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaDiscord /></a>
            <a href="https://www.twitter.com/tajulafreen" className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'><FaTwitter /></a>
         </motion.div>  
             </motion.ul>
