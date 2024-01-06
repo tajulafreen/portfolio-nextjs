@@ -76,4 +76,16 @@ export const projectDetails = [
       source:
         'https://github.com/tajulafreen/Leaderboard',
     },
+    {
+      name: 'To-DO List',
+      description: [
+        'React Todo App is the app offers a seamless experience for managing todos effectively. Its user-friendly interface combined with powerful features like adding, removing, editing todos and change the position of todos.',
+        "The React Todo App is a user-centric application designed to streamline and organize tasks efficiently. Its intuitive interface provides users with a seamless experience for managing their to-do lists. The app offers essential functionalities such as adding new tasks, removing existing ones, and editing task details as needed. Additionally, users can easily rearrange the position of their tasks, allowing for prioritization and customization according to their preferences. With a focus on user-friendliness and practicality, this app simplifies task management by combining powerful features with a clean and accessible design, enhancing productivity and task organization for its users.",
+      ],
+      image: '/todolist.png',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'React','Tailwind'],
+      live: 'https://to-do-list-vxaq.onrender.com/',
+      source:
+        'https://github.com/tajulafreen/to-do-react',
+    },
   ];
