@@ -10,7 +10,7 @@ interface Props {
 
 const ProjectCard = ({ src, title, description, onReadMoreClick }: Props) => {
   return (
-    <div className="flex flex-col relative items-center overflow-hidden rounded-3xl shadow-lg border border-[#2A0E61] h-[500px] mx-[2%]">
+    <div className="flex flex-col relative items-center overflow-hidden rounded-3xl shadow-lg border border-[#2A0E61] h-[500px] mx-[2%] py-[5px]">
       <Image
         src={src}
         alt={title}
@@ -19,7 +19,7 @@ const ProjectCard = ({ src, title, description, onReadMoreClick }: Props) => {
         className="h-[50%] object-contain w-[110%] bg-opacity-10"
       />
 
-      <div className="pt-[-16px] mt-0 px-3 h-[40%]">
+      <div className=" pt-[-16px]  h-[50%] px-3 md:h-[40%] my-[3%]">
         <h1 className="text-2xl font-semibold text-white text-center">{title}</h1>
         <p className="mt-2 text-[14px] text-gray-300">{description}</p>
       </div>
