@@ -21,7 +21,7 @@ const ProjectCard = ({ src, title, description, onReadMoreClick }: Props) => {
 
       <div className=" pt-[-16px]  h-[50%] px-3 md:h-[40%] my-[3%]">
         <h1 className="text-2xl font-semibold text-white text-center">{title}</h1>
-        <p className="mt-2 text-[14px] text-gray-300">{description}</p>
+        <p className="mt-2 md:text-[15px] max-sm:text-[13px]  text-gray-300">{description}</p>
       </div>
       <button
         type="button"
