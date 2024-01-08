@@ -55,8 +55,8 @@ const Popwindow = ({ project, onClosePopUp }: PopwindowProps) => {
           ))}
         </ul>
         <div className='flex flex-row gap-[3%] justify-end '>
-        <button type='button' className='button-primary text-gray-200 p-3 w-[100px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 rounded-2xl border border-[#2A0E61]'><a href={project.live}>Live</a></button>
-        <button type='button' className='button-primary text-gray-200 p-3 w-[100px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 rounded-2xl border border-[#2A0E61]'><a href={project.source}>Source</a></button>
+        <button type='button' className='button-primary text-gray-200 p-3 w-[100px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 rounded-2xl border border-[#2A0E61]'><a href={project.live} target="_blank">Live</a></button>
+        <button type='button' className='button-primary text-gray-200 p-3 w-[100px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 rounded-2xl border border-[#2A0E61]'><a href={project.source} target="_blank">Source</a></button>
       </div>
       </motion.div>
     </motion.div>

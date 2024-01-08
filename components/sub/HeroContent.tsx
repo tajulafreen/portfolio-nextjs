@@ -47,8 +47,8 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="md:text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          Hey there, I&apos;m <b className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-xl ">Tajul Afreen</b>, a Full Stack Software Developer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          Hi there, I&apos;m <b className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-xl ">Tajul Afreen</b>, a Full Stack Software Developer with experience in Website,
+           Mobile, and Software development. Please check out my projects and skills.
         </motion.p>
         <motion.div
           initial={{ opacity: 1 }}
@@ -57,10 +57,10 @@ const HeroContent = () => {
           className="flex flex-row gap-5 text-gray-200 text-[22px]"
         >
           
-          <a href="https://www.linkedin.com/in/tajul-afreen"><FaLinkedin /></a>
-          <a href="https://www.github.com/tajulafreen"><FaGithub /></a>
-          <a href="https://discord.gg/2gUVQxZ4"><FaDiscord /></a>
-           <a href="https://www.twitter.com/tajulafreen"><FaTwitter /></a>
+          <a href="https://www.linkedin.com/in/tajul-afreen" target="_blank"><FaLinkedin /></a>
+          <a href="https://www.github.com/tajulafreen" target="_blank"><FaGithub /></a>
+          <a href="https://discord.gg/4ffR2vaHAG" target="_blank"><FaDiscord /></a>
+           <a href="https://www.twitter.com/tajulafreen" target="_blank"><FaTwitter /></a>
         </motion.div>
         <motion.a
           variants={slideInFromLeft(1)}
