@@ -35,30 +35,30 @@ const Footer = () => {
                     <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
           
                     <FaLinkedin />
-                    <a href="https://www.linkedin.com/in/tajul-afreen"><span className="text-[15px] ml-[6px]">Linkedin</span></a>    
+                    <a href="https://www.linkedin.com/in/tajul-afreen" target="_blank" ><span className="text-[15px] ml-[6px]">Linkedin</span></a>    
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                     <RxGithubLogo />
-                    <a href="https://www.github.com/tajulafreen "> <span className="text-[15px] ml-[6px]">Github</span></a>   
+                    <a href="https://www.github.com/tajulafreen " target="_blank"> <span className="text-[15px] ml-[6px]">Github</span></a>   
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                         <RxAngle />
-                        <a href="https://wellfound.com/u/tajul-afreen"><span className="text-[15px] ml-[6px]">Well Found</span></a>    
+                        <a href="https://wellfound.com/u/tajul-afreen" target="_blank"><span className="text-[15px] ml-[6px]">Well Found</span></a>    
                     </p>
                 </div>
                 <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                     <div className="font-bold text-[16px]">Social Media</div>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                     <FaDiscord />
-                        <span className="text-[15px] ml-[6px]"><a href="https://discord.gg/4ffR2vaHAG">Discord</a></span>    
+                        <span className="text-[15px] ml-[6px]"><a href="https://discord.gg/4ffR2vaHAG" target="_blank">Discord</a></span>    
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                    <RxTwitterLogo />
-                   <a href="https://www.twitter.com/tajulafreen"><span className="text-[15px] ml-[6px]">Twitter</span></a>    
+                   <a href="https://www.twitter.com/tajulafreen" target="_blank"><span className="text-[15px] ml-[6px]">Twitter</span></a>    
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                     <RxShadowInner />
-                        <a href="https://join.slack.com/t/newworkspace-xcz8151/shared_invite/zt-29l1d1dx2-~ew5PeeAjPwrrWRp6TJLmA"><span className="text-[15px] ml-[6px]">Slack</span> </a>    
+                        <a href="https://join.slack.com/t/newworkspace-xcz8151/shared_invite/zt-29l1d1dx2-~ew5PeeAjPwrrWRp6TJLmA" target="_blank"><span className="text-[15px] ml-[6px]">Slack</span> </a>    
                     </p>
                 </div>
                 <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
@@ -69,11 +69,11 @@ const Footer = () => {
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                       
-                        <a href="https://docs.google.com/document/d/1EbIrEA_zuzbal2X17RwAQ5tPWRHYu7ift3Ei_46H-Ek/edit?usp=sharing"><span className="text-[15px] ml-[6px]">Learning about me</span></a>    
+                        <a href="https://docs.google.com/document/d/1EbIrEA_zuzbal2X17RwAQ5tPWRHYu7ift3Ei_46H-Ek/edit?usp=sharing" target="_blank"><span className="text-[15px] ml-[6px]">Learning about me</span></a>    
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-500">
                   
-                        <a href="https://affushaik9493@gmail.com"><span className="text-[15px] ml-[6px]">affushaik9493@gmail.com</span> </a>   
+                        <a href="https://affushaik9493@gmail.com" target="_blank"><span className="text-[15px] ml-[6px]">affushaik9493@gmail.com</span> </a>   
                     </p>
                 </div>
             </div>
