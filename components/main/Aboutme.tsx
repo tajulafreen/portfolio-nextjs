@@ -26,7 +26,7 @@ function Aboutme() {
            </div>
            <button 
            className='h-[40px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 w-[200px] button-primary text-center text-white cursor-pointer rounded-xl '>
-            <a href="/Resume.pdf" download="Resume">Get My Resume </a></button>
+            <a href="\Resume.pdf" download="Resume">Get My Resume </a></button>
         </motion.div>
     </motion.div>
   )
