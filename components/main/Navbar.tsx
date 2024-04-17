@@ -61,7 +61,7 @@ const Navbar = () => {
             <a href="#projects" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-purple-500">
               Projects
             </a>
-            <a href="/Resume.pdf" download="Resume" className='cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-purple-500'>Get My Resume </a>
+            <a href="\Resume.pdf" download="Resume" className='cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-purple-500'>Get My Resume </a>
             <a href="#contact" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-purple-500">
               Contact
             </a>
